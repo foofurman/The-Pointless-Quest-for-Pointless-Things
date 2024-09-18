@@ -456,6 +456,7 @@ void Science()
             cout << "Hey! How dare you defeat my room!" << endl;
             Battle("Ms. Broom", 20, 7);
             cout << "You got extremly powerful foobreze!" << endl;
+            foobreze = 1;
             Science();
         }
         else
@@ -585,21 +586,12 @@ void TourtureAreaProgress()
     }
     else if (roomChoose == 1)
     {
-        cout << "You see your teddy bear on a stool..." << endl;
-        if (first == "grim" || "Grim" && "second" == "reaper" || "Reaper")
-        {
-            cout << "The Kill Anyone in a Room Service came through!" << endl;
-            cout << "Your principal was the grim reaper!" << endl;
-            cout << "You got your teddy bear back!" << endl;
-        }
-        else
-        {
-            cout << "Do you know why I took your teddy bear?" << endl;
-            cout << "He wasn't wearing his uniform! It's a Monday! And you know..." << endl;
-            cout << "YOU'RE NOT WEARING A UNIFORM, EITHER!!" << endl;
-            Battle("Dr. Eithers", 100, 5);
-            cout << "You got your teddy bear back!" << endl;
-        }
+        
+        cout << "Do you know why I took your teddy bear?" << endl;
+        cout << "He wasn't wearing his uniform! It's a Monday! And you know..." << endl;
+        cout << "YOU'RE NOT WEARING A UNIFORM, EITHER!!" << endl;
+        Battle("Dr. Eithers", 100, 5);
+        cout << "You got your teddy bear back!" << endl;
     }
 }
 // end of tourture area.
@@ -619,4 +611,3 @@ int main()
     cout << "Thank you for playing! Play more of our games in the future!" << endl;
     return 0;
 }
-
